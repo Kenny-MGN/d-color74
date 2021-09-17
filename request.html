@@ -1,0 +1,86 @@
+<!doctype HTML>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Заявка на подключение</title>
+		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="all">
+			<div id="header">
+				<div id="menu">
+					<div id="adress">
+						<p class="logo_text"><img class="logo_img" src="img/phone.png" alt="Телефон" width="24" height="24">(3519) 43-96-93</p>
+						<p class="logo_text"><img class="logo_img" src="img/office.png" alt="Офис" width="24" height="24">Завенягина 1/2, 3 эт.</p>
+						<p class="logo_text"><img class="logo_img" src="img/clock.png" alt="График работы" width="24" height="24">Пн-Пт: 9:00 - 18:00</p>
+					</div>
+					<div id="home" class="navigation">
+						<a href="index.html"><img class="grow" src="img/home.png" alt="Домашняя страница" width="48" height="48"></a><br>
+						<a href="index.html">Домашняя страница</a>
+					</div>
+					<div id="prod" class="navigation">
+						<a href="receivers.html"><img class="grow" src="img/receivers.png" alt="Приставки" width="48" height="48"></a><br>
+						<a href="receivers.html">ТВ-приставки</a>
+					</div>
+					<div id="help" class="navigation">
+						<a href="help.html"><img class="grow" src="img/help.png" alt="Справочная информация" width="48" height="48"></a><br>
+						<a href="help.html">Вопросы и ответы</a>
+					</div>
+					<div id="sent" class="navigation">
+						<a href="request.html"><img class="grow" src="img/note.png" alt="Заявка" width="48" height="48"></a><br>
+						<a href="request.html">Оставить заявку</a>
+					</div>
+					<div id="office" class="navigation">
+						<a href="contact.html"><img class="grow" src="img/telephone.png" alt="Офис" width="48" height="48"></a><br>
+						<a href="contact.html">Контакты</a>
+					</div>
+				</div>
+			</div>
+			<div id="main">
+				<h1>Оформление заявки на подключение</h1>
+				<img src="img/antenna.jpg" alt="Оформление заявки" width="372" height="266">
+				<form name="request_form" action="request.php" target="_blank" method="post">
+					<div id="form_table">
+						<div class="form_row">
+							<div class="form_cell"><p class="cell1"><label for="io">Имя и отчество:</label></p></div><div class="form_cell cell2"><input name="io" id="io" type="text" placeholder="Иван Васильевич" maxlength="50" size="46" required></div>
+						</div>
+						<div class="form_row">
+							<div class="form_cell"><p class="cell1"><label for="phone_number">Номер телефона:</label></p></div><div class="form_cell cell2"><input name="phone_number" id="phone_number" type="tel" placeholder="8-9XX-XXX-XX-XX; 43-96-93" maxlength="25" size="46" required></div>
+						</div>
+						<div class="form_row">
+							<div class="form_cell"><p class="cell1"><label for="adressf">Адрес:</label></p></div><div class="form_cell cell2"><input name="adress" id="adressf" type="text" placeholder="Завенягина 1/2" size="46" maxlength="100" required></div>
+						</div>
+					</div>
+					<p class="form_text"><label for="aerial">Антенна:</label>
+						<select id="aerial" name="antenna" size="1" selected="Комнатная">
+							<option value="Комнатная">Комнатная</option>
+							<option value="Наружная">Наружная</option>
+							<option value="Общедомовая">Общедомовая</option>
+							<option value="Отсутствует">Отсутствует</option>
+						</select>
+					</p>
+					<p class="form_text"><label for="model">Модель ресивера:</label>
+						<select id="model" name="model" size="1" selected="DC910HD">
+							<option value="DC910HD">DC 910HD (1599 руб)</option>
+							<option value="DC1401HD">DC1401HD (1999 руб)</option>
+							<option value="Не определился">Не определился(ась)</option>
+						</select>
+					</p>
+					<p id="submit"><input id="submit_button" name="send" type="submit" value="Отправить заявку"></p>
+				</form>
+				<div id="request_end">
+				<p id="cancel">Мы свяжемся с вами в течение трех дней и согласуем дату и время подключения. Для того чтобы отменить заявку позвоните по телефону <strong>43-96-93</strong> или добавьте пометку <span id="cancel_mark">(отказ)</span> к введенным данным в графе "Имя и отчество".</p> 
+				<p id="mont_price">Стоимость подключения (доставка, установка и настройка) составляет <strong>500 руб.</strong>
+				</div>
+				<div id="footer">
+					<p>
+						Не является публичной офертой. Цифровой сигнал распространяется по всей территории РФ бесплатно, согласно Указу Президента РФ № 715 от
+						24 июня 2009 года "Об общедоступных телеканалах и радиоканалах". Оплата производится только за эфирную тв-приставку, необходимую для приема
+						этого сигнала. Далее пользователь получает возможность смотреть цифровое телевидение без циклической абонентской платы.
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
